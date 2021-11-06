@@ -8,12 +8,28 @@
 </head>
 <body>
   <div>
-    <h1>Добавить цитату</h1>
-    <div>
-      <form method="POST">
-        <input type="text"><input type="text"><input type="text"><input type="text"><input type="text">
-      </form>
-    </div>
-  </div>  
+    <a href="/all">Показать все классы</a>
+    <a href="/table">Создать таблицу</a>
+    <div class="form">
+      <h1 class="form-title">Добавить класс</h1>
+      <div class="form__content">
+        <form id="main" action="/create" method="post">
+          <input class="form-input" name="classname" id="classname" type="text" placeholder="Название класса" />
+          <input class="form-input" name="teacher" id="teacher" type="text" placeholder="Учитель" />
+          <input class="form-input" name="firstname" id="firstname" type="text" placeholder="Имя ученика" />
+          <input class="form-input" name="lastname" id="lastname" type="text" placeholder="Фамилия ученика" />
+          <div>
+            <h2>Оценки за четверти</h2>
+            <input class="form-input-mark" name="mark1" id="mark1" type="number" placeholder="1" />
+            <input class="form-input-mark" name="mark2" id="mark2" type="number" placeholder="2" />
+            <input class="form-input-mark" name="mark3" id="mark3" type="number" placeholder="3" />
+            <input  class="form-input-mark" name="mark4" id="mark4" type="number" placeholder="4" />
+          </div>
+          <button id="sendButton">Отправить</button>
+        </form>
+      </div>
+    </div>  
+  </div>
+<script src="javascripts/inputs.js"></script>
 </body>
 </html>
