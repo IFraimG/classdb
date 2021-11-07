@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylesheets/style.css">
   <title>Document</title>
 </head>
 <body>
   <div>
-    <a href="/all">Показать все классы</a>
-    <a href="/table">Создать таблицу</a>
+    <div class="links">
+      <a href="./users.html">Показать все классы</a>
+      <a href="/table">Создать таблицу</a>
+    </div>
     <div class="form">
       <h1 class="form-title">Добавить класс</h1>
       <div class="form__content">
@@ -18,14 +21,29 @@
           <input class="form-input" name="teacher" id="teacher" type="text" placeholder="Учитель" />
           <input class="form-input" name="firstname" id="firstname" type="text" placeholder="Имя ученика" />
           <input class="form-input" name="lastname" id="lastname" type="text" placeholder="Фамилия ученика" />
-          <div>
+          <div class="form__marks">
             <h2>Оценки за четверти</h2>
-            <input class="form-input-mark" name="mark1" id="mark1" type="number" placeholder="1" />
-            <input class="form-input-mark" name="mark2" id="mark2" type="number" placeholder="2" />
-            <input class="form-input-mark" name="mark3" id="mark3" type="number" placeholder="3" />
-            <input  class="form-input-mark" name="mark4" id="mark4" type="number" placeholder="4" />
+            <div class="form__marks-inputs">
+              <div>
+                <label for="mark1">1 четверть</label>
+                <input min="2" max="5" value="5" class="form-input-mark" name="mark1" id="mark1" type="number" />
+              </div>
+              <div>
+                <label for="mark2">2 четверть</label>
+                <input min="2" max="5" value="5" class="form-input-mark" name="mark2" id="mark2" type="number" />
+              </div>
+              <div>
+                <label for="mark3">3 четверть</label>
+                <input min="2" max="5" value="5" class="form-input-mark" name="mark3" id="mark3" type="number" />
+              </div>
+              <div>
+                <label for="mark4">4 четверть</label>
+                <input min="2" max="5" value="5" class="form-input-mark" name="mark4" id="mark4" type="number" />
+              </div>
+            </div>
           </div>
-          <button id="sendButton">Отправить</button>
+          <button type="submit" id="sendButton">Отправить</button>
+          <div class="form__errors"></div>
         </form>
       </div>
     </div>  

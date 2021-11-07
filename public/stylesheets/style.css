@@ -5,4 +5,90 @@ body {
 
 a {
   color: #00B7FF;
+  text-decoration: none;
+}
+
+.links {
+  margin-bottom: 50px;
+}
+
+.links a {
+  margin-left: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 50px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow:  20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.form h1, h2 {
+  color: #01597c;
+  margin-bottom: 50px;
+}
+
+.form h2 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.form input {
+  padding: 10px 5px;
+  border: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+.form__marks-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form__marks-inputs label {
+  margin-left: 20px;
+  padding-right: 10px;
+}
+
+.form-input-mark {
+  width: 20px;
+  font-size: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+caption {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.table__list {
+  font-size: 18px;
+}
+
+.table__list th {
+  font-weight: normal;
+  padding: 20px 10px;
+}
+
+.table__body {
+  padding: 10px;
 }
